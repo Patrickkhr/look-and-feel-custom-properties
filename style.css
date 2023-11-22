@@ -1,0 +1,136 @@
+/* Fonts */
+@font-face {
+  font-family: AvenirRoman;
+  src: url(../font/Avenir-roman.ttf);
+}
+
+@font-face {
+  font-family: AvenirMedium;
+  src: url(../font/Avenir-medium.ttf);
+}
+
+@font-face {
+  font-family: AvenirBlack;
+  src: url(../font/Avenir\ -black.ttf);
+}
+
+:root {
+  --body-color: #E4E9F7;
+  --sidebar-color: #FFF;
+  --primary-color: #FF0000;
+  --toggle-color: #DDD;
+  --text-color: #707070;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+
+body {
+  --h1: 3rem;
+  --h2: 2.25rem;
+  --h3: 2rem;
+  --h4: 1.3462rem;
+  --paragraph: 16px;
+  --borderRounded: 5px;
+  --htmlElementColor: rgb(48, 133, 200);
+  --classElementColor: rgb(120, 213, 255);
+  --classTextColor: orange;
+  --bgcolorBlack: black;
+  --buttonHeight: 45px;
+  --buttonFontsize: 18px;
+  --buttonCursor: pointer;
+  --spacing: 1em;
+  --inputGap: 3em;
+  --inputBg: #eeeeee;
+  font-family: AvenirMedium;
+}
+
+button {
+  height: var(--buttonHeight);
+  border: none;
+  padding-inline: 1rem;
+  color: var(--sidebar-color);
+  border-radius: var(--borderRounded);
+  font-size: var(--buttonFontsize);
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: var(--buttonCursor);  
+}
+
+.forms {
+  margin-top: 1em;
+}
+
+.loginButton {
+  background-color: var(--primary-color);
+}
+
+.regularButton {
+  background-color: black;
+}
+
+.textButton {
+  color: var(--bgcolorBlack);
+  text-decoration: underline;
+}
+
+/* Start Login  */
+.input-wrapper {
+  display: flex;
+  gap: var(--inputGap);
+
+}
+
+.input-field {
+  width: 100%;
+  height: var(--buttonHeight);
+  border: none;
+  padding-inline: 1rem;
+  background-color: var(--inputBg);
+  color: var(--text-color);
+  outline: none;
+  font-size: var(--buttonFontsize);
+  transition: .5s;
+  border-radius: var(--borderRounded);
+}
+/* End Login  */
+
+/* Start searchForm */
+.searchForm {
+  display: flex;
+  gap: var(--inputGap);
+  margin-block: var(--spacing);
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+/* End searchForm */
+
+/* Start filters */
+select#filters {
+  border-radius: 6px;
+  background-color: var(--inputBg);
+  cursor: var(--buttonCursor);
+  transition: var(--tran-05);
+  border: none;
+  padding: var(--spacing);
+}
+
+select#filters option {
+  height: 50%;
+  width: 50%;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color-light);
+  color: var(--text-color);
+  border-radius: var(--borderRounded);
+  font-size: var(--buttonFontsize);
+  font-weight: 500;
+  transition: var(--tran-05);
+}
+/* End filters */
